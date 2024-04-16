@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="form-container">
+    <h2 class="form-title">Post New Climate Data</h2>
+    <form formGroup="postClimateForm">
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" id="country" name="country" required formControlName="country">
+      </div>
+      <div class="form-group">
+        <label for="iso2">Iso2</label>
+        <input type="iso2" id="iso2" name="iso2" required formControlName="iso2">
+      </div>
+      <div class="form-group">
+        <label for="iso3">Iso3</label>
+        <input type="iso3" id="iso3" name="iso3" required formControlName="iso3">
+      </div>
+      <button type="submit" (click)="postClimate()">Post</button>
+    </form>
+  </div>
+</div>
